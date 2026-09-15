@@ -6,14 +6,14 @@
 </head>
 <body>
     <div style="border: 1px solid #999; padding: 6px;">
-        <a href="#">Войти</a> |
+        <a href="Dreamweaver/login.php">Войти</a> |
         <a href="newnote.php">Новая запись</a> |
         <a href="email.php">Отправить сообщение</a> |
         <a href="photo.php">Фото</a> |
         <a href="files.php">Файлы</a> |
-        <a href="#">Администратору</a> |
+        <a href="Dreamweaver/users.php">Администратору</a> |
         <a href="inform.php">Информация</a> |
-        <a href="#">Выйти</a>
+        <a href="Dreamweaver/logout.php">Выйти</a>
     </div>
     <p><em>Рад приветствовать вас<br>
     на страницах моего сайта, посвященного путешествиям!<br>

@@ -85,5 +85,39 @@ if ($comments_count == 0) {
     echo " В comments уже есть записи, пропуск вставки", "<br>";
 }
 
+//Таблица privileges (лаба 10)
+$query = "CREATE TABLE privileges
+(id SMALLINT NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (id),
+  name VARCHAR (20),
+  password VARCHAR (20),
+  rights VARCHAR (1))";
+$create_priv = mysqli_query($link, $query);
+if ($create_priv) {
+    echo " Таблица privileges успешно создана", "<br>";
+} else {
+    echo "Таблица privileges не создана", "<br>";
+}
+
+$priv_count = 0;
+$res = mysqli_query($link, "SELECT COUNT(*) AS c FROM privileges");
+if ($res) {
+    $row = mysqli_fetch_array($res);
+    $priv_count = (int)$row['c'];
+}
+if ($priv_count == 0) {
+    $ok = mysqli_query($link, "INSERT INTO privileges (name, password, rights) VALUES
+('admin', 'admin', 'a'),
+('user1', 'user1', 'u'),
+('user2', 'user2', 'u')");
+    if ($ok) {
+        echo " Записи в privileges добавлены", "<br>";
+    } else {
+        echo "Записи в privileges не добавлены", "<br>";
+    }
+} else {
+    echo " В privileges уже есть записи, пропуск вставки", "<br>";
+}
+
 echo "<br>ВНИМАНИЕ, ПОСЛЕ ВЫПОЛНЕНИЯ ЭТОГО СКРИПТА ПЕРЕД СДАЧЕЙ ЛАБЫ НУЖНО ЕГО УДАЛИТЬ!!!!";
 ?>
