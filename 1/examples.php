@@ -26,7 +26,7 @@ echo "5) p = $p, b = $b<br>";
 $result = $p . " " . $b;
 echo "6) result = $result<br>";
 
-// 7. Оператор .= — добавить « хорошо»
+// 7. Оператор .= - добавить « хорошо»
 $result .= " хорошо";
 echo "7) result = $result<br>";
 
