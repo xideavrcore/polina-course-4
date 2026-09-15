@@ -9,8 +9,8 @@
         <a href="#">Войти</a> |
         <a href="newnote.php">Новая запись</a> |
         <a href="email.php">Отправить сообщение</a> |
-        <a href="#">Фото</a> |
-        <a href="#">Файлы</a> |
+        <a href="photo.php">Фото</a> |
+        <a href="files.php">Файлы</a> |
         <a href="#">Администратору</a> |
         <a href="inform.php">Информация</a> |
         <a href="#">Выйти</a>
